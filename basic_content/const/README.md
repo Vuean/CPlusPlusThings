@@ -8,7 +8,7 @@
 
 ## 1. const含义
 
-常类型是指使用类型修饰符const说明的类型，常类型的变量或对象的值是不能被更新的。
+常类型是指使用类型修饰符`const`说明的类型，常类型的变量或对象的值是不能被更新的。
 
 ## 2. const作用
 
@@ -41,7 +41,7 @@
 
 *注意*：非`const`变量默认为`extern`。要使`const`变量能够在其他文件中访问，必须在文件中显式地指定它为`extern`.  
 
-    未被`const`修饰的变量在不同文件的访问: 
+未被`const`修饰的变量在不同文件的访问: 
 
 ```C++
     // file1.cpp  
@@ -55,7 +55,7 @@
     }
 ```
 
-    `const`常量在不同文件的访问：
+`const`常量在不同文件的访问：
 
 ```C++
     // extern_file1.cpp
@@ -152,10 +152,108 @@ ptr是一个指向`int`类型的`const`对象的指针，`const`定义的是`int
     using namespace std;
     int main(){
         int num = 0;
-        int * const prt = &num; // const指针必须初始化！且const指针的值不能修改
+        int * const ptr = &num; // const指针必须初始化！且const指针的值不能修改
         int * t = &num;
         *t = 1;
-        cout << *prt << endl;
+        cout << *ptr << endl;
     }
 ```
+
+上述指针ptr做指向的值，可以通过非`const`指针来修改。
+
+最后，当把一个`const`常量的地址赋值给ptr时，由于ptr指向的是一个常量，而不是`const`常量，所以会报错：`const int* -> int*`错误！
+
+```C++
+    #include <iostream>
+    using namespace std;
+    int main() {
+        const int num = 0;
+        int * const ptr = &num; // error！ const int* -> int*
+        cout << *ptr << endl;
+    }
+```
+
+上述可改为`const int *ptr`或改为`const int * const ptr`。
+
+## (5.3) 指向常量的常指针
+
+```C++
+    const int p = 3;
+    const int * const ptr = &p;
+```
+
+ptr是一个`const`指针，指向了一个`int`类型的`const`对象。
+
+# 6. 函数中使用const
+
+## (6.1) const修饰函数返回值
+
+__(1) const int__  
+这个本身无意义，因为参数返回本身就是赋值给其他变量！
+
+```C++
+    const int func1();
+```
+
+__(2) const int*__  
+指针指向的类容不变。
+
+```C++
+    const int* func2();
+```
+
+__(3) int *const__  
+指针本身不可变。
+
+```C++
+    int *const func3();
+```
+
+## (6.2) const修饰函数参数
+
+__(1) 传递过来的参数及指针本身在函数内不可变__
+
+```C++
+    void func(const int var);   // 传递过来的参数不可变
+    void func(int *const ptr);  // 指针本身不可变
+```
+
+上述两种`const`修饰的函数参数，表明参数在函数体内不能被修改，但此处没有任何意义，var/ptr本身就是形参，在函数内不会改变。
+
+输入参数采用“值传递”，由于函数将自动产生临时变量用于复制该参数，因此该参数本来就无需保护，所以不需要加`const`修饰。
+
+__(2) 参数指针所指内容为常量不可变__
+
+```C++
+    void stringCopy(char *dst, const char *src);
+```
+
+其中，src为输入参数，dst为输出参数。给src加上`const`修饰后，如果函数体内的语句试图改动src的内容，编译器将指出错误。
+
+__(3) 参数为引用，为了增加效率同时防止修改__
+
+```C++
+    void func(const A &a);
+```
+
+对于非内部数据类型的参数而言，如`void func(A a)`这样声明的函数效率较低，因为函数体内将产生A类型的临时对象用于复制a，而临时对象的构造、复制、析构过程将消耗时间。
+
+为了提高效率，可将函数声明为`void func(A &a)`，因为“引用传递”进借用参数的别名，不需要产生临时对象。
+
+> 但是`void func(A &a)`存在一个缺点：  
+> “引用传递”有可能改变参数a，这不是我们所期望的。因此，可将参数加const修饰：`void func(const A &a)`。
+
+那是否将`void func(int x) `改写为`void func(const int &x)`，以提高效率呢？完全没有必要，因为内部数据类型的参数不存在构造、析构过程，而且复制过程也非常快，“值传递”和“引用传递”的效率相当。
+
+## (6.3) 小结：
+
+- 1. 对于非内部数据类型的输入参数，应该将“值传递”的方式改为“const 引用传递”，目的是提高效率。
+- 2. 对于内部数据类型的输入参数，不要将“值传递”的方式改为“const 引用传递”。否则既达不到提高效率的目的，又降低了函数的可理解性。
+
+以上解决了两个面试问题：
+
+- 如果函数需要传入一个指针，是否需要为该指针加上const，把const加在指针不同的位置有什么区别；
+- 如果写的函数需要传入的参数是一个复杂类型的实例，传入值参数或者引用参数有什么区别，什么时候需要为传入的引用参数加上const。
+  
+# 7. 类中使用const
 

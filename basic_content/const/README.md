@@ -3,7 +3,7 @@
 
 ## 0. 项目来源及原作者
 
-    https://github.com/Light-City/CPlusPlusThings
+    h原项目网址：ttps://github.com/Light-City/CPlusPlusThings
     原作者个人公众号：guangcity
 
 ## 1. const含义
@@ -41,7 +41,7 @@
 
 *注意*：非`const`变量默认为`extern`。要使`const`变量能够在其他文件中访问，必须在文件中显式地指定它为`extern`.  
 
-未被`const`修饰的变量在不同文件的访问: 
+未被`const`修饰的变量在不同文件的访问:
 
 ```C++
     // file1.cpp  
@@ -243,7 +243,7 @@ __(3) 参数为引用，为了增加效率同时防止修改__
 > 但是`void func(A &a)`存在一个缺点：  
 > “引用传递”有可能改变参数a，这不是我们所期望的。因此，可将参数加const修饰：`void func(const A &a)`。
 
-那是否将`void func(int x) `改写为`void func(const int &x)`，以提高效率呢？完全没有必要，因为内部数据类型的参数不存在构造、析构过程，而且复制过程也非常快，“值传递”和“引用传递”的效率相当。
+那是否将`void func(int x)`改写为`void func(const int &x)`，以提高效率呢？完全没有必要，因为内部数据类型的参数不存在构造、析构过程，而且复制过程也非常快，“值传递”和“引用传递”的效率相当。
 
 ## (6.3) 小结：
 
@@ -257,3 +257,126 @@ __(3) 参数为引用，为了增加效率同时防止修改__
   
 # 7. 类中使用const
 
+在一个类中，任何不会修改数据成员的函数都应该声明为`const`类型。如果在编写`const`成员函数时，不慎修改数据成员，或者调用了其他非`const`成员函数，编译器将指出错误，这无疑会提高程序的健壮性。
+
+使用`const`关键字进行说明的成员函数，成为**常成员函数**。只有常成员函数才有资格操作常量或常对象，没有使用`const`关键字进行说明的成员函数不能用来操作常对象。
+
+对于类中的`const`成员变量必须通过**初始化列表**来进行初始化：
+
+```C++
+    class Apple{
+    private:
+        int people[100];
+    public:
+        Apple(int i);
+        const int apple_number
+    };
+
+    Apple::Apple(int i) : apple_number(i)
+    {
+
+    }
+```
+
+__`const`对象只能访问`const`成员函数,而非`const`对象可以访问任意的成员函数,包括`const`成员函数。__
+
+```C++
+    // apple.h
+    class Apple {
+    private:
+        int people[100];
+    public:
+        Apple(int i);
+        const int apple_number;
+        void take(int num) const;
+        int add(int num);
+        int add(int num) const;
+        int getCount() const;
+    };
+
+    // main.cpp
+    #include <iostream>
+    #include "apple.h"
+    using namespace std;
+
+    Apple::Apple(int i) : apple_number(i)
+    {
+
+    }
+    int Apple::add(int num)
+    {
+        take(num);
+        return 0;   // 添加返回值
+    }
+    int Apple::add(int num) const
+    {
+        take(num * 2);
+        return 0;   // 添加返回值
+    }
+    void Apple::take(int num) const
+    {
+        cout << "take func " << num << endl;
+    }
+    int Apple::getCount() const
+    {
+        take(1);
+        // add(); // error
+        return apple_number;
+    }
+
+    int main(){
+        Apple a(2);
+        cout << a.getCount() << endl;
+        a.add(10);
+        const Apple b(3);
+        b.add(100);
+        return 0;
+    }
+```
+
+结果：
+
+```C++
+    take func 1
+    2
+    take func 10    // 证明非const对象可以访问任意的成员函数,包括const成员函数
+    take func 200
+```
+
+上面`getCount()`方法中调用了一个`add()`方法（如果没有一个重载的`const add()`函数），而add方法并非const修饰，所以报错。也就是说`const`对象只能访问const成员函数。
+
+而`add`方法又调用了`const`修饰的`take`方法，证明了非`const`对象可以访问任意的成员函数,包括`const`成员函数。
+
+除此之外，我们也看到`add`的一个重载函数，也输出了两个结果，说明`const`对象默认调用const成员函数。
+
+初始化`const`常量出了用**初始化列表**方式外，还可以使用以下方法：  
+第一：将常量定义与`static`结合，即：
+
+```C++
+    static const int apple_number;
+```
+
+第二：在类外面初始化：
+
+```C++
+    const int Apple::apple_number = 10;
+```
+
+当然，如果使用c++11进行编译，直接可以在定义出初始化，可以直接写成：
+
+```C++
+    static const int apple_number = 10;
+    // 或者
+    const int apple_number = 10;
+```
+
+> 简单说明：  
+> 在C++中，static静态成员变量不能再类的内部初始化。在类的内部只是声明，定义必须在类定义体的外部，通常在类的实现文件中初始化。
+> 在类中声明：
+> ```C++
+>   static int ap;
+> ```
+> 在类实现文件中使用：
+> ```C++
+>   int Apple::ap = 2020;
+> ```

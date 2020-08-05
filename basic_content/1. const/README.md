@@ -3,8 +3,8 @@
 
 ## 0. 项目来源及原作者
 
-    h原项目网址：ttps://github.com/Light-City/CPlusPlusThings
-    原作者个人公众号：guangcity
+原项目网址：<https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/const>
+原作者个人公众号：guangcity
 
 ## 1. const含义
 

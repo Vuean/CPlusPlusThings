@@ -2,9 +2,8 @@
 
 ## 0. 项目来源
 
-    作者信息：
-    原项目网址：https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/static
-    原作者个人微信公众号：guangcity
+原项目网址：<https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/static>  
+原作者个人微信公众号：guangcity
 
 ## 1. static含义
 

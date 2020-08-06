@@ -88,6 +88,7 @@
 <https://blog.csdn.net/sweetfather/article/details/78487563>  
 
 总的来说，对齐后：
+
 - (1) 看变量所在偏移地址是否为变量大小的整数倍
 - (2) 看对齐后的总大小是否为最长变量的整数倍
 

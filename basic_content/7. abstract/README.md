@@ -21,7 +21,8 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 - 抽象类：包含纯虚函数的类
 
 抽象类只能作为基类来派生新类使用，不能创建抽象类的对象，抽象类的指针和引用指向由抽象类派生出来的类的对象！
-> 代码样例：pure_virtual.cpp
+> 代码样例：
+[pure_virtual.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/pure_virtual.cpp)
 
 ## 2. 实现抽象类
 
@@ -44,13 +45,15 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
     };
 ```
 
-> 代码样例：abstract.cpp
+> 代码样例：
+[abstract.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/abstract.cpp)
 
 ## 3. 重要点
 
 - 纯虚函数使一个类变成抽象类
 
-> 代码样例：interesting_facts1.cpp
+> 代码样例：
+[interesting_facts1.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/interesting_facts1.cpp)
 
 ```C++
     // 抽象类至少包含一个纯虚函数
@@ -65,7 +68,8 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 
 - 抽象类类型的指针和引用
 
-> 代码样例：interesting_facts2.cpp
+> 代码样例：
+[interesting_facts2.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/interesting_facts2.cpp)
 
 ```C++
     class Derived : public Base
@@ -88,7 +92,8 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 
 - 如果我们不在派生类中覆盖纯虚函数，那么派生类也会变成抽象类
 
-> 代码样例：interesting_facts3.cpp
+> 代码样例：
+[interesting_facts3.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/interesting_facts3.cpp)
 
 ```C++
     class Derived : public Base
@@ -100,7 +105,8 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 
 - 抽象类可以有构造函数
 
-> 代码样例：interesting_facts4.cpp
+> 代码样例：
+[interesting_facts4.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/interesting_facts4.cpp)
 
 ```C++
     // 抽象类
@@ -125,7 +131,8 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 
 - 构造函数不能是虚函数，而析构函数可以是虚析构函数
 
-> 代码样例：interesting_facts5.cpp
+> 代码样例：
+[interesting_facts5.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/interesting_facts5.cpp)
 
 ```C++
     class Base {
@@ -168,4 +175,5 @@ C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们
 
 抽象类由派生类继承实现！
 
-> 代码样例：derived_full.cpp
+> 代码样例：
+[derived_full.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/7.%20abstract/derived_full.cpp)

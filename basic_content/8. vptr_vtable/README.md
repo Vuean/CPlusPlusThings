@@ -24,7 +24,8 @@
 
 ![base](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/8.%20vptr_vtable/img/base.jpg)
 
-> 代码样例：vptr1.cpp
+> 代码样例：
+[vptr1.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/8.%20vptr_vtable/vptr1.cpp)
 
 ```C++
     // vptr1.cpp

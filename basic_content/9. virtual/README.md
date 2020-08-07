@@ -52,6 +52,10 @@
 
 我们之所以使用虚函数，是因为需要在信息不全的情况下进行多态运行。而构造函数是用来初始化实例的，实例的类型必须是明确的。 因此，构造函数没有必要被声明为虚函数。
 
+尽管构造函数不可以为虚函数，但是有些场景下我们确实需要 “Virtual Copy Constructor”。  
+“虚复制构造函数”的说法并不严谨，其只是一个实现了对象复制的功能的类内函数。  
+举一个应用场景，比如剪切板功能。 复制内容作为基类，但派生类可能包含文字、图片、视频等等。我们只有在程序运行的时候才知道我们需要复制的具体是什么类型的数据。
+
 > 代码样例：
 [copy_construct.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set3/copy_consrtuct.cpp)、
 [vir_con.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set3/vir_con.cpp)
@@ -63,6 +67,8 @@
 > 代码样例：
 [full_virde.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set3/full_virde.cpp)、
 [vir_de.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set3/vir_de.cpp)
+
+具体可参见：《Effective C++ 改善程序与设计的55个具体做法》条款07: 为多态基类声明virtual 析构函数 Declare destructors virtual in polymorphic base classes.
 
 （4） **虚函数可以为私有函数吗？**
 
@@ -94,7 +100,6 @@ RTTI（Run-Time Type Identification)，通过运行时类型信息程序能够�
 > 代码样例：
 [rtti.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set4/rtti.cpp)、
 [warn_rtti.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/basic_content/9.%20virtual/set4/warn_rtti.cpp)
-
 
 ## 6. 纯虚函数和抽象类
 

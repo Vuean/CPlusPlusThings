@@ -31,3 +31,5 @@
 - (12)[位域那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/12.%20bit)
 - (13)[extern 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/13.%20extern)
 - (14)[struct 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/14.%20struct)
+- (15)[struct 与 class 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/15.%20struct_class)
+- (16)[union 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/16.%20union)

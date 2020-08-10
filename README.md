@@ -23,7 +23,11 @@
 - (4) [inline那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/4.%20inline)
 - (5) [sizeof那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/5.%20sizeof)
 - (6) [函数指针那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/6.%20func_pointer)
-- (7) [纯虚函数和抽象类](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/8.%20vptr_vtable)
-- (8) [vptr_vtable 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/9.%20virtual)
-- (10) [virtual 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/10.%20volatile)
-- 
+- (7) [纯虚函数和抽象类](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/8.%20abstract)
+- (8) [vptr_vtable 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/8.%20vptr_vtable)
+- (9) [virtual 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/9.%20virtual)
+- (10) [volatile 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/10.%20volatile)
+- (11)[assert 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/10.%20assert)
+- (12)[位域那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/10.%20bit)
+- (13)[extern 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/10.%20extern)
+

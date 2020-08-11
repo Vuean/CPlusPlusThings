@@ -36,3 +36,5 @@
 - (17)[c 实现 c++ 多态那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/17.%20c_poly)
 - (18)[explicit 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/18.%20explicit)
 - (19)[friend 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/19.%20friend)
+- (20)[using 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/20.%20using)
+- (21)[:: 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/21.%20maohao)

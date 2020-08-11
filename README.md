@@ -37,4 +37,12 @@
 - (18)[explicit 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/18.%20explicit)
 - (19)[friend 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/19.%20friend)
 - (20)[using 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/20.%20using)
-- (21)[:: 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/21.%20maohao)
+- (21)[:: 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/21.%20%20maohao)
+- (22)[enum 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/22.%20enum)
+- (23)[decltype 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/23.%20decltype)
+- (24)[引用与指针那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/24.%20pointer_refer)
+- (25)[宏那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/25.%20macro)
+
+## 2. 实战系列
+
+### 2.1 [10日狂练]()

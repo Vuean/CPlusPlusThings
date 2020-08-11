@@ -15,7 +15,7 @@
 - 中文名：C++那些事
 - 英文名：Stories About C Plus Plus
 
-## 1. 基础进阶
+## 1. [基础进阶](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content)
 
 - (1) [const那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/1.%20const)
 - (2) [static那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/2.%20static)
@@ -33,3 +33,4 @@
 - (14)[struct 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/14.%20struct)
 - (15)[struct 与 class 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/15.%20struct_class)
 - (16)[union 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/16.%20union)
+- (17)[c 实现 c++ 多态那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/17.%20c_poly)

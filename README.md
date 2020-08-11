@@ -34,3 +34,4 @@
 - (15)[struct 与 class 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/15.%20struct_class)
 - (16)[union 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/16.%20union)
 - (17)[c 实现 c++ 多态那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/17.%20c_poly)
+- (18)[explicit 那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/18.%20explicit)

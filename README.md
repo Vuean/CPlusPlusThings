@@ -45,4 +45,13 @@
 
 ## 2. 实战系列
 
-### 2.1 [10日狂练]()
+### 2.1 [10日狂练](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice)
+
+1. [day1](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day1)
+
+    - [打印练习.cpp](https://github.com/Vuean/CPlusPlusThings/pulls)
+    - [是否闰年.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/10_day_practice/day1/%E6%98%AF%E5%90%A6%E9%97%B0%E5%B9%B4.cpp)
+    - [注释.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/10_day_practice/day1/%E6%B3%A8%E9%87%8A.cpp)
+    - [联合体学习.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/10_day_practice/day1/%E8%81%94%E5%90%88%E4%BD%93%E5%AD%A6%E4%B9%A0.cpp)
+
+2. [day2]()

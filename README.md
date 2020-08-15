@@ -43,7 +43,7 @@
 - (24)[引用与指针那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/24.%20pointer_refer)
 - (25)[宏那些事](https://github.com/Vuean/CPlusPlusThings/tree/master/basic_content/25.%20macro)
 
-## 2. 实战系列
+## 2. [实战系列](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises)
 
 ### 2.1 [10日狂练](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice)
 

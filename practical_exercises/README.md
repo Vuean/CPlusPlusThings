@@ -59,13 +59,13 @@
 
 7. [day7: 运算符重载](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7)
 
-    - [()运算符]()
-    - [=号运算符]()
-    - [[]与()例题]()
-    - [[]运算符]()
-    - [一元运算符]()
-    - [二元运算符]()
-    - [综合例题]()
+    - [()运算符](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/()%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [=号运算符](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%3D%E5%8F%B7%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [[]与()例题](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%5B%5D%E4%B8%8E()%E4%BE%8B%E9%A2%98)
+    - [[]运算符](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%5B%5D%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [一元运算符](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%E4%B8%80%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [二元运算符](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%E4%BA%8C%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [综合例题](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day7/%E7%BB%BC%E5%90%88%E4%BE%8B%E9%A2%98)
 
 8. [day8: 模板与STL](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day8)
 
@@ -87,3 +87,9 @@
 |—— [时钟++运算符重载.cpp]()  
 |—— [运算符重载之强制转换.cpp]()  
 |—— [重载圆括号的时钟.cpp]()  
+|—— [函数模板.cpp]()  
+|—— [动态数组.cpp]()  
+|—— [字典插入与查找.cpp]()  
+|—— [异常捕获.cpp]()  
+|—— [类模板之栈.cpp]()  
+|—— [类模板特化之数组.cpp]()  

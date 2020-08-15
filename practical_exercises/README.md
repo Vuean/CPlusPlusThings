@@ -8,7 +8,7 @@
 
 ## 1. [10日狂练](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice)
 
-1. [day1: 基本C++语法](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day1) 
+1. [day1: 基本C++语法](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day1)
 
     - [打印练习.cpp](https://github.com/Vuean/CPlusPlusThings/pulls)
     - [联合体学习.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/10_day_practice/day1/%E8%81%94%E5%90%88%E4%BD%93%E5%AD%A6%E4%B9%A0.cpp)
@@ -81,15 +81,20 @@
 
     - [文件例题](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day10/%E6%96%87%E4%BB%B6%E4%BE%8B%E9%A2%98)
 
-## 2. [重点实战练习]()
+## 2. [重点实战练习](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/key_exercises)
 
-|—— [中括号重载.cpp]()  
-|—— [时钟++运算符重载.cpp]()  
-|—— [运算符重载之强制转换.cpp]()  
-|—— [重载圆括号的时钟.cpp]()  
-|—— [函数模板.cpp]()  
-|—— [动态数组.cpp]()  
-|—— [字典插入与查找.cpp]()  
-|—— [异常捕获.cpp]()  
-|—— [类模板之栈.cpp]()  
-|—— [类模板特化之数组.cpp]()  
+|—— [中括号重载.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E4%B8%AD%E6%8B%AC%E5%8F%B7%E9%87%8D%E8%BD%BD.cpp)  
+|—— [函数模板.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF.cpp)  
+|—— [时钟++运算符重载.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E6%97%B6%E9%92%9F%2B%2B%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD.cpp)  
+|—— [运算符重载之强制转换.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD%E4%B9%8B%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2.cpp)  
+|—— [重载圆括号的时钟.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E9%87%8D%E8%BD%BD%E5%9C%86%E6%8B%AC%E5%8F%B7%E7%9A%84%E6%97%B6%E9%92%9F.cpp)  
+|—— [动态数组.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84.cpp)  
+|—— [字典插入与查找.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E5%AD%97%E5%85%B8%E6%8F%92%E5%85%A5%E4%B8%8E%E6%9F%A5%E6%89%BE.cpp)  
+|—— [异常捕获.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7.cpp)  
+|—— [类模板之栈.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E4%B9%8B%E6%A0%88.cpp)  
+|—— [类模板特化之数组.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%89%B9%E5%8C%96%E4%B9%8B%E6%95%B0%E7%BB%84.cpp)  
+|—— [继承与封装.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%B0%81%E8%A3%85.cpp)  
+|—— [读写文件综合题.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6%E7%BB%BC%E5%90%88%E9%A2%98.cpp)  
+|—— [输入输出运算符重载.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD.cpp)  
+|—— [输入输出重载.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E9%87%8D%E8%BD%BD.cpp)  
+|—— [输出格式.cpp](https://github.com/Vuean/CPlusPlusThings/blob/master/practical_exercises/key_exercises/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F.cpp)

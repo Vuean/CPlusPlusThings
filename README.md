@@ -105,3 +105,17 @@
     - [一元运算符]()
     - [二元运算符]()
     - [综合例题]()
+
+8. [day8: 模板与STL](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day8)
+
+    - [STL](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day8/STL)
+    - [函数模板](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day8/%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF)
+    - [类模板](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day8/%E7%B1%BB%E6%A8%A1%E6%9D%BF)
+
+9. [day9: 异常](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day9)
+
+    - [异常例子](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day9/%E5%BC%82%E5%B8%B8%E4%BE%8B%E5%AD%90)
+
+10. [day10: 文件与流](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day10)
+
+    - [文件例题](https://github.com/Vuean/CPlusPlusThings/tree/master/practical_exercises/10_day_practice/day10/%E6%96%87%E4%BB%B6%E4%BE%8B%E9%A2%98)
